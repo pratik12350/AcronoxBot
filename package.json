@@ -20,7 +20,7 @@
         "axios": "^0.23.0",
         "canvas": "^2.8.0",
         "cat-facts.js": "^1.0.0",
-        "chalk": "^4.1.2",
+        "chalk": "^5.0.0",
         "cpu-stat": "^2.0.1",
         "discord": "^0.8.2",
         "discord-player": "^5.1.0",
