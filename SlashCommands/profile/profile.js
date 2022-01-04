@@ -1,4 +1,5 @@
 const profileSchema = require('../../models/profile');
+ 
 const {
   MessageEmbed,
   MessageActionRow,
@@ -15,6 +16,11 @@ module.exports = {
     {
       name: "display",
       description: "Display your profile!",
+      type: "SUB_COMMAND"
+    }, 
+    {
+      name: "bio_set",
+      description: "set bio for your profile",
       type: "SUB_COMMAND"
     }
   ],
