@@ -195,7 +195,7 @@ function ms(val, options) {
   }
   throw new Error(
     "val is not a non-empty string or a valid number. val=" +
-      JSON.stringify(val)
+    JSON.stringify(val)
   );
 }
 
@@ -373,8 +373,8 @@ function getAllTextFromEmbed(embed) {
       text += `\n**${field.name
         .replace(/(https?:\/\/)?discord\.gg\/(\w+)/g, "Invite")
         .replace(/\[(.*)\]\((.*)\)/g, "Hyper link")}**\n ${field.value
-        .replace(/(https?:\/\/)?discord\.gg\/(\w+)/g, "Invite")
-        .replace(/\[(.*)\]\((.*)\)/g, "Hyper link")}`;
+          .replace(/(https?:\/\/)?discord\.gg\/(\w+)/g, "Invite")
+          .replace(/\[(.*)\]\((.*)\)/g, "Hyper link")}`;
     }
   }
   if (embed.footer) {
@@ -496,10 +496,10 @@ const leven = (te, t) => {
         i === 0
           ? j
           : Math.min(
-              arr[i - 1][j] + 1,
-              arr[i][j - 1] + 1,
-              arr[i - 1][j - 1] + (te[j - 1] === t[i - 1] ? 0 : 1)
-            );
+            arr[i - 1][j] + 1,
+            arr[i][j - 1] + 1,
+            arr[i - 1][j - 1] + (te[j - 1] === t[i - 1] ? 0 : 1)
+          );
     }
   }
   return arr[t.length][te.length];
@@ -767,7 +767,7 @@ module.exports = {
   getAllTextFromEmbed,
   clean,
   tips,
-//  buttons,
+  //  buttons,
   colorize,
   leven,
   chunk,

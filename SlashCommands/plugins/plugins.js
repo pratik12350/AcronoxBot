@@ -40,7 +40,7 @@ module.exports = {
         .setTitle(`🔌 PLUGINS LIST`)
         .setColor(client.config.color)
         .setDescription(
-          ">>> `Mod Logging`: **Logs Almost all moderator actions**\n`AntiSwear`: **Deletes Messages contain bad words**\n`Welcome`: **Welcomes users with a Welcome card and custom messages**\n`Suggestion`: Suggest system with reply!\\`AutoMeme`: n\n\n funny reddir memes every 30\nUse `/plugin show` To Get All Activated Plugins in this server!"
+          ">>> `Mod Logging`: **Logs Almost all moderator actions**\n`AntiSwear`: **Deletes Messages contain bad words**\n`Welcome`: **Welcomes users with a Welcome card and custom messages**\n`Suggestion`: Suggest system with reply!\n`AutoMeme`: funny reddit memes every 30s!\\nUse `/plugin show` To Get All Activated Plugins in this server!"
         )
         .setFooter(`Use /plugin help to learn how to use plugins!`)
       interaction.followUp({ embeds: [embed] })
