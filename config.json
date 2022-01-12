@@ -1,0 +1,7 @@
+{
+    "token": "your bot token",
+    "prefix": "$",
+    "color": "#00FF00",
+    "url": "your bot invite url",
+    "mongooseConnectionString": "your mongoDB URI"
+}
