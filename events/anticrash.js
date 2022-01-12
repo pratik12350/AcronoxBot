@@ -19,6 +19,7 @@ process.on("unhandledRejection", (reason, p) => {
 
         return client.channels.cache.get("906053930746794004").send({ embeds: [embed]})
 
+  process.exit(1)
 });
 
 
@@ -37,7 +38,7 @@ process.on("uncaughtException", (err, origin) => {
 .setColor(`#2F3136`)
 
     return client.channels.cache.get("906053930746794004").send({ embeds: [embed]})
-
+ process.exit(1)
 });
 
 
@@ -56,7 +57,7 @@ process.on("uncaughtExceptionMonitor", (err, origin) => {
     .setColor(`#2F3136`)
 
     return client.channels.cache.get("906053930746794004").send({ embeds: [embed]})
-
+process.exit(1)
 });
 
 process.on("multipleResolves", (type, promise, reason) => {

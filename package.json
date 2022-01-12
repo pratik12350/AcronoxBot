@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node index.js",
-        "test": "nodemon index.js"
+        "start": "node .",
+        "test": "nodemon index.js",
+        "stop": "npx pm2 stop index.js"
     },
     "keywords": [],
     "author": "",

@@ -69,6 +69,7 @@ if(data) {
   setInterval(async() => {
   let channel = client.channels.cache.get(data.channelID)
 
+    if(!channel) return;
   let json = await fetch('https://api.nuggetdev.com/api/meme').then((res) => res.json())
 
   let embed = new MessageEmbed()

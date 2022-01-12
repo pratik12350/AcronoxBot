@@ -10,7 +10,7 @@ const fetch = require('node-fetch')
 module.exports = {
   name: 'automeme',
   description: "AutoMeme",
-  userPermission: ["MANAGE_GUILD"],
+ // userPermission: ["MANAGE_GUILD"],
   options: [
     {
       name: "set",
@@ -40,7 +40,8 @@ run: async(client, interaction, args) => {
 
   
 // if(interaction.guild.id !== "890260823572889610") return interaction.followUp({content: `This Command under Development!`})
-  
+  if(!interaction.member.permissions.has("MANAGE_CHANNELS")) return interaction.followUp({content: "You are missing permissions to use this command! You need `MANAGE CHANNELS` Permission!"})
+
 const [ cmd ] = args;
 
   if(cmd === "set") {
