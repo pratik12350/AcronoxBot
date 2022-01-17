@@ -52,6 +52,7 @@ Schema.findOne({guildID: interaction.guild.id}, async(err, data) => {
   if(data) {
     data.channelID = channel.id
     data.guildID = interaction.guild.id
+    data.save()
   } else {
     new Schema({
       guildID: interaction.guild.id,
