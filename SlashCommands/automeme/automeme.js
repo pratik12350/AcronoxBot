@@ -52,7 +52,7 @@ Schema.findOne({guildID: interaction.guild.id}, async(err, data) => {
   if(data) {
     data.channelID = channel.id
     data.guildID = interaction.guild.id
-    data.save()
+    data.save() //this fix datasaving issue, earlier data.save() was missing so data would not be saved.
   } else {
     new Schema({
       guildID: interaction.guild.id,
